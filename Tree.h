@@ -11,6 +11,11 @@ public:
     unsigned int countNodes();
     unsigned int countEdges();
     unsigned int height();
+    
+    void remove(int v);
+    string inorder();
+    string preorder();
+    string postorder();
 
 private:
     //inserts a new node
@@ -22,4 +27,10 @@ private:
     //returns the height of the tree
     unsigned int height(Node* node);
     Node* root;
+    
+    Node *getMinNode(Node *node);
+    Node *remove(int v, Node *node);
+    string inorder(Node *node);
+    string preorder(Node *node);
+    string postorder(Node *node);
 };
