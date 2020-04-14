@@ -53,7 +53,7 @@ unsigned int Tree::countNodes(Node* node)
 
 unsigned int Tree::countNodes()
 {
-    countNodes(root);
+    return countNodes(root);
 }
 
 unsigned int Tree::countEdges(Node* node)
@@ -65,7 +65,7 @@ unsigned int Tree::countEdges(Node* node)
 
 unsigned int Tree::countEdges()
 {
-    countEdges(root);
+   return countEdges(root);
 }
 
 unsigned int Tree::height(Node* node)
